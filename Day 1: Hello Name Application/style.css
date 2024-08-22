@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("projBG.jpg");
+    background-size: cover;    
+}
+
+.container {
+    color: white;
+    text-align: center;
+    background-color: rgb(0, 0, 0,0.7);
+    padding: 32px;
+    border-radius: 12px;
+    box-shadow: 0 5px 7px rgba(0, 0, 0, 0.3);
+}
+
+span {
+    color: rgb(255, 255, 0);
+}
+
+button {
+    background-color: rgb(255, 255, 255);
+    color: darkslategray;
+    margin-top: 45px;
+    padding: .5rem 1rem;
+    font: 1em sans-serif;
+    border: 2px solid black;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color .5s;
+}
+
+button:hover {
+    background-color: yellow;
+    font-weight: bold;
+}
