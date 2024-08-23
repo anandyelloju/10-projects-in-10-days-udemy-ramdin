@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #222;
+}
+
+body.on {
+    background: radial-gradient(#555,#111);
+}
+
+.wire {
+    position: absolute;
+    left: calc(50% - 2px);
+    bottom: 50%;
+    height: 60vh;
+    width: 4px;
+    background: black;
+    border: whitesmoke solid 1px;
+}
+
+.bulb {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    background: transparent;
+    z-index: 2;
+}
+
+.bulb i {
+    font-size: 4rem;
+    color: #444;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(180deg);
+}
+
+.switch {
+    position: absolute;
+    top: 75%;
+    right: 48.5%;
+    width: 50px;
+    height: 50px;
+    background: rgb(32, 153, 32);
+    color: rgb(214, 210, 210);
+    border: rgb(222, 222, 222) solid 2px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: gray 0px 2px 20px 0px;
+    cursor: pointer;
+}
+
+.switch i {
+    font-size: 1.5rem;
+}
+
+.on .bulb i {
+    color: yellow;
+}
+
+.on .switch {
+    background: red;
+}
